@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="zh-Hant" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Wong | Engineering Profile</title>
-    <meta name="description" content="Software engineer focused on SDN, SONiC, P4, optical networking, and system integration.">
+    <title>Peter Wong | 工程技術簡介</title>
+    <meta name="description" content="專注於 SDN、SONiC、P4、光網路與系統整合的軟體工程師。">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -15,14 +15,16 @@
 
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-semibold text-slate-900 tracking-tight">Peter Wong (王定山)</a>
+            <a href="#hero" class="font-semibold text-slate-900 tracking-tight">Peter Wong（王定山）</a>
             <div class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
-                <a href="#experience" class="hover:text-slate-900 transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
-                <a href="#skills" class="hover:text-slate-900 transition-colors">Skills</a>
+                <a href="#about" class="hover:text-slate-900 transition-colors">關於我</a>
+                <a href="#experience" class="hover:text-slate-900 transition-colors">經歷</a>
+                <a href="#projects" class="hover:text-slate-900 transition-colors">專案</a>
+                <a href="#publications" class="hover:text-slate-900 transition-colors">論文與專利</a>
+                <a href="#skills" class="hover:text-slate-900 transition-colors">技能</a>
+                <a href="#contact" class="hover:text-slate-900 transition-colors">聯絡方式</a>
                 <span class="text-slate-300">|</span>
-                <a href="zh.html" class="text-slate-400 hover:text-slate-900 transition-colors" title="Switch to Traditional Chinese">EN / 繁中</a>
+                <a href="index.html" class="text-slate-400 hover:text-slate-900 transition-colors" title="Switch to English">繁中 / EN</a>
             </div>
         </div>
     </nav>
@@ -31,56 +33,58 @@
 
         <section id="hero" class="pt-8">
             <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-3">Peter Ting-shan Wong</h1>
-            <h2 class="text-xl text-slate-600 font-medium mb-6">Software Engineer | SDN / Network Systems / Optical Networking</h2>
+            <h2 class="text-xl text-slate-600 font-medium mb-6">軟體工程師 | SDN / 網路系統 / 光網路</h2>
             <p class="text-lg text-slate-700 max-w-2xl mb-8 leading-relaxed">
-                Software engineer with experience in SDN, SONiC, P4, and optical networking systems. Built routing and wavelength assignment functions, SDN controller modules, and hardware/software integration for OWS-based AI networking environments. Strong background in Python, C/C++, network control plane design, failure recovery, and system integration.
+                具備 SDN、SONiC、P4 與光網路系統經驗的軟體工程師。
+                參與建置 Routing and Wavelength Assignment（RWA，路由與波長分配）功能、SDN 控制器模組，以及光交換與 AI 網路環境中的軟硬體整合。
+                熟悉 Python、C/C++、Network Control Plane（網路控制平面）設計、故障恢復與系統整合。
             </p>
             <div class="flex flex-wrap gap-4">
                 <a href="mailto:tingshan.0204@gmail.com" class="inline-flex items-center px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-md hover:bg-slate-800 transition-colors shadow-sm">Email</a>
                 <a href="https://www.linkedin.com/in/peter-tsw/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-slate-300 bg-white text-slate-700 text-sm font-medium rounded-md hover:bg-slate-50 transition-colors shadow-sm">LinkedIn</a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-slate-300 bg-white text-slate-700 text-sm font-medium rounded-md hover:bg-slate-50 transition-colors shadow-sm">GitHub</a>
-                <a href="https://mountainshansblog.wordpress.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-slate-300 bg-white text-slate-700 text-sm font-medium rounded-md hover:bg-slate-50 transition-colors shadow-sm">Personal Webpage</a>
+                <a href="https://github.com/mountainshan" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-slate-300 bg-white text-slate-700 text-sm font-medium rounded-md hover:bg-slate-50 transition-colors shadow-sm">GitHub</a>
+                <a href="https://mountainshansblog.wordpress.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-slate-300 bg-white text-slate-700 text-sm font-medium rounded-md hover:bg-slate-50 transition-colors shadow-sm">部落格</a>
             </div>
         </section>
 
         <section id="about" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-6">About</h3>
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-6">關於我</h3>
             <p class="text-base text-slate-700 leading-relaxed max-w-3xl">
-                I work on software and system integration for networking and infrastructure-related environments, with a focus on SDN, SONiC, P4, optical networking, and AI networking scenarios. My experience spans controller design, routing and wavelength assignment, hardware/software integration, and failure recovery mechanisms. I am particularly interested in building practical systems that connect architecture ideas with real implementation.
+                我目前主要投入於網路與基礎設施相關場域的軟體開發與系統整合，聚焦於 SDN、SONiC、P4、光網路，以及 AI 網路應用情境。過去的經驗涵蓋控制器設計、Routing and Wavelength Assignment（RWA，路由與波長分配）、軟硬體整合，以及故障恢復機制。我特別關注如何將架構概念轉化為可落地、可驗證的實際系統。
             </p>
         </section>
 
         <section id="experience" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">Experience</h3>
-            
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">經歷</h3>
+
             <div class="bg-white border border-slate-200 rounded-lg p-6 md:p-8 shadow-sm">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-4">
                     <div>
                         <h4 class="text-lg font-bold text-slate-900">Edgecore Networks Corporation</h4>
-                        <p class="text-slate-600 font-medium mt-1">Technical Manager / Software Engineer</p>
+                        <p class="text-slate-600 font-medium mt-1">軟體工程師 / 技術帶領</p>
                     </div>
                     <div class="mt-2 md:mt-0 text-slate-500 text-sm text-left md:text-right">
-                        <p>Tainan, Taiwan</p>
-                        <p>2023–Present</p>
+                        <p>台南，台灣</p>
+                        <p>2023–至今</p>
                     </div>
                 </div>
                 <ul class="list-disc list-outside ml-5 mt-4 space-y-2 text-slate-700 text-sm md:text-base leading-relaxed marker:text-slate-400">
-                    <li>Designed and implemented routing and wavelength assignment (RWA) functions for an Optical Wavelength Switching (OWS) SDN controller.</li>
-                    <li>Developed SDN controller software for OWS integration with ToR switches and AI server networking environments.</li>
-                    <li>Implemented SONiC platform functions including hardware monitoring and transceiver / PSU protection.</li>
-                    <li>Contributed to AI networking and system integration topics including RDMA, DCQCN, topology design, and time synchronization support.</li>
+                    <li>設計並實作 Optical Wavelength Switching（OWS，光波長交換）SDN 控制器中的 Routing and Wavelength Assignment（RWA，路由與波長分配）功能。</li>
+                    <li>開發 OWS 與 ToR switch、AI 伺服器網路環境整合所需的 SDN 控制器軟體。</li>
+                    <li>實作 SONiC 平台功能，包含硬體監控與 transceiver / PSU 保護機制。</li>
+                    <li>參與 AI 網路與系統整合相關主題，包含 RDMA、DCQCN、拓撲設計與時間同步支援。</li>
                 </ul>
             </div>
         </section>
 
         <section id="projects" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">Selected Projects</h3>
-            
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">精選專案</h3>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
                     <h4 class="text-md font-bold text-slate-900 mb-3 leading-tight">Optical Wavelength Switching SDN Controller</h4>
                     <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                        Designed controller-side logic for optical network control, including routing and wavelength assignment, system integration, and control workflows across switching and server-facing components.
+                        負責光網路控制相關的控制器邏輯設計，內容涵蓋路由與波長分配、系統整合，以及交換設備與伺服器端元件之間的控制流程設計。
                     </p>
                     <div class="flex flex-wrap gap-2 mt-auto">
                         <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs font-medium">SDN Controller</span>
@@ -90,10 +94,10 @@
                     </div>
                 </div>
 
-                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
                     <h4 class="text-md font-bold text-slate-900 mb-3 leading-tight">SONiC Platform Integration</h4>
                     <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                        Implemented platform-level software functions for monitoring and protection, including thermal and hardware-related handling for stable system operation.
+                        實作平台層級的監控與保護功能，包含溫度與硬體狀態處理，以提升系統運作時的穩定性與可維護性。
                     </p>
                     <div class="flex flex-wrap gap-2 mt-auto">
                         <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs font-medium">SONiC</span>
@@ -102,10 +106,10 @@
                     </div>
                 </div>
 
-                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
                     <h4 class="text-md font-bold text-slate-900 mb-3 leading-tight">P4 In-Band Control Plane Research</h4>
                     <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                        Worked on control plane design for programmable networks, including automatic bootstrapping and fast failure recovery in multi-controller environments.
+                        研究 Programmable Network（可程式化網路）中的控制平面設計，聚焦於自動啟動流程與多控制器環境下的快速故障恢復機制。
                     </p>
                     <div class="flex flex-wrap gap-2 mt-auto">
                         <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs font-medium">P4</span>
@@ -117,18 +121,18 @@
         </section>
 
         <section id="publications" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">Publications & Patent</h3>
-            
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">論文與專利</h3>
+
             <div class="space-y-8 text-sm md:text-base text-slate-700">
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-3">Selected Publications</h4>
+                    <h4 class="font-bold text-slate-900 mb-3">精選論文</h4>
                     <ul class="list-disc list-outside ml-5 space-y-2 marker:text-slate-400">
                         <li><strong>IEEE TNSM 2023</strong> — Design of an In-Band Control Plane for Automatic Bootstrapping and Fast Failure Recovery in P4 Networks</li>
                         <li><strong>ICCCNS 2025</strong> — Design and Implementation of an In-Band Control Plane for P4 Networks with Multiple Controllers</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-3">Patent</h4>
+                    <h4 class="font-bold text-slate-900 mb-3">專利</h4>
                     <ul class="list-disc list-outside ml-5 space-y-2 marker:text-slate-400">
                         <li><strong>US10805206B1</strong> — Method for rerouting traffic in software defined networking network and switch thereof</li>
                     </ul>
@@ -137,74 +141,82 @@
         </section>
 
         <section id="skills" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">Skills</h3>
-            
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">技能</h3>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h4 class="text-sm font-semibold text-slate-900 mb-3">Languages</h4>
+                    <h4 class="text-sm font-semibold text-slate-900 mb-3">程式語言</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Python</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">C / C++</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">C</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">C++</span>
                         <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Shell Script</span>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-sm font-semibold text-slate-900 mb-3">Networking / Systems</h4>
+                    <h4 class="text-sm font-semibold text-slate-900 mb-3">網路 / 系統</h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">SDN (SONiC, P4, OpenFlow)</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">FastAPI / REST API</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">RDMA / DCQCN</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">SONiC</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">P4</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">OpenFlow</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">REST API</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">FastAPI</span>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-sm font-semibold text-slate-900 mb-3">Infrastructure / Tools</h4>
+                    <h4 class="text-sm font-semibold text-slate-900 mb-3">領域專長</h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Linux</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Docker / Kubernetes</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Ansible</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Proxmox</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Optical Networking</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">OWS</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">RWA</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">RDMA</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">DCQCN</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Failure Recovery</span>
                     </div>
                 </div>
-                
+
                 <div>
-                    <h4 class="text-sm font-semibold text-slate-900 mb-3">Domain Expertise & Utilities</h4>
+                    <h4 class="text-sm font-semibold text-slate-900 mb-3">基礎設施 / 工具</h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Network Simulation</span>
-                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Local LLMs (ollama)</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Linux</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Docker</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Ansible</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Proxmox</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="education" class="border-t border-slate-200 pt-16">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">Education</h3>
-            
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">學歷</h3>
+
             <div class="space-y-6">
                 <div>
-                    <h4 class="text-base font-bold text-slate-900">Ph.D., Dept. Electrical Engineering</h4>
-                    <p class="text-sm text-slate-600 mt-1">National Chung Cheng University, Taiwan</p>
+                    <h4 class="text-base font-bold text-slate-900">博士，電機工程學系</h4>
+                    <p class="text-sm text-slate-600 mt-1">國立中正大學，台灣</p>
                     <p class="text-sm text-slate-500 mt-1">2015–2023</p>
                 </div>
                 <div>
-                    <h4 class="text-base font-bold text-slate-900">B.S., Dept. Communication Engineering</h4>
-                    <p class="text-sm text-slate-600 mt-1">National Chung Cheng University, Taiwan</p>
+                    <h4 class="text-base font-bold text-slate-900">學士，通訊工程學系</h4>
+                    <p class="text-sm text-slate-600 mt-1">國立中正大學，台灣</p>
                     <p class="text-sm text-slate-500 mt-1">2011–2015</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="border-t border-slate-200 pt-16 pb-24">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-6">Connect</h3>
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-6">聯絡方式</h3>
             <p class="text-base text-slate-700 mb-6">
-                Feel free to reach out for technical discussion or professional connection.
+                歡迎就技術交流、合作機會或專業聯繫與我聯絡。
             </p>
             <div class="flex flex-wrap gap-x-6 gap-y-4 text-sm font-medium text-slate-600">
                 <a href="mailto:tingshan.0204@gmail.com" class="hover:text-slate-900 transition-colors">Email</a>
                 <a href="https://www.linkedin.com/in/peter-tsw/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">LinkedIn</a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">GitHub</a>
-                <a href="https://mountainshansblog.wordpress.com/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">Personal Webpage</a>
+                <a href="https://github.com/mountainshan" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">GitHub</a>
+                <a href="https://mountainshansblog.wordpress.com/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">部落格</a>
             </div>
         </section>
 
