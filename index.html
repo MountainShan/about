@@ -81,6 +81,55 @@
                 box-shadow: none;
             }
         }
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+            }
+        
+            nav {
+                display: none !important;
+            }
+        
+            .no-print {
+                display: none !important;
+            }
+        
+            main {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                space-y: 0 !important;
+            }
+        
+            section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                padding-top: 2rem !important;
+                padding-bottom: 0 !important;
+            }
+        
+            .lift-card {
+                box-shadow: none !important;
+                transform: none !important;
+            }
+        
+            .soft-chip {
+                background-color: #e2e8f0 !important;
+                color: #0f172a !important;
+            }
+        
+            a {
+                color: black !important;
+                text-decoration: none !important;
+            }
+        
+            .fade-in-section {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased leading-relaxed">
